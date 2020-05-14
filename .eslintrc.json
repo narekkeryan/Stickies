@@ -1,0 +1,27 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "accessor-pairs": ["error"],
+    "comma-dangle": ["error", "always-multiline"],
+    "import/order": ["error", {
+      "newlines-between": "always"
+    }],
+    "linebreak-style": ["error", "unix"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "require-atomic-updates": ["error"],
+    "valid-jsdoc": ["error"]
+  }
+}
