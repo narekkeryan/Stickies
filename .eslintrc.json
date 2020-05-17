@@ -3,14 +3,18 @@
     "node": true,
     "commonjs": true,
     "es6": true,
-    "mocha": true
+    "mocha": true,
+    "browser": true
   },
   "extends": [
     "eslint:recommended",
-    "airbnb-base"
+    "airbnb"
   ],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "rules": {
@@ -21,6 +25,9 @@
     }],
     "linebreak-style": ["error", "unix"],
     "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "react/jsx-filename-extension": ["error", {
+      "extensions": [".js", ".jsx"]
+    }],
     "require-atomic-updates": ["error"],
     "valid-jsdoc": ["error"]
   }
